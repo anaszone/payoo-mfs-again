@@ -10,6 +10,25 @@ document.getElementById('btn-add-money')
         const pinNumberInput = document.getElementById('input-pin-number').value;
         console.log(pinNumberInput);
         
-        
+        if( pinNumberInput === '1234' )
+        {
+            console.log('adding money to your account');
+
+            const balance = document.getElementById('account-balance').innerText;
+
+            const addMoneyNumber = parseFloat(addMoneyInput);
+            const balanceNumber = parseFloat(balance);
+
+            const newBalance = addMoneyNumber + balanceNumber;
+            console.log(newBalance);
+
+            document.getElementById('account-balance').innerText = newBalance;
+        }
+        else
+        {
+            alert('failed to add money to your account');
+        }
+
+
 
     } );
