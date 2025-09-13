@@ -27,15 +27,17 @@
                   <div class="card-body">
                     <fieldset class="fieldset">
                       <label class="label">Mobile Number</label>
-                      <input type="text" class="input" placeholder="Mobile Number" />
+                      <input id="phone-number" type="text" class="input" placeholder="Mobile Number" />
                       <label class="label">4 Digit Pin</label>
                       <input
+                        id="pin-number"
                         type="password"
                         class="input"
+                        autocomplete="off"
                         placeholder="Password"
                       />
                       <div><a class="link link-hover">Forgot password?</a></div>
-                      <button class="btn btn-neutral mt-4">Login</button>
+                      <button id="button-login" class="btn btn-neutral mt-4">Login</button>
                     </fieldset>
                   </div>
                 </div>
@@ -46,5 +48,7 @@
         </div>
       </div>
     </main>
+
+    <script src="js/login.js"></script>
   </body>
 </html>
